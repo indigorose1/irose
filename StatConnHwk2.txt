@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{fancyvrb}
+\usepackage{txfonts}
+\usepackage{bbold}
+
+\title{Statistical Connectomics: Homework 2}
+\author{Indigo V. L. Rose}
+
+\begin{document}
+\maketitle
+
+\section*{Review of 6 Steps}
+
+\begin{enumerate}
+\item Sample Space: $\Xi$
+\item Model: $P=\{P_{\theta}:\theta \in \Theta\}$
+\item Action Space: $\mathcal{A}=\{a_{1},...\}$
+\item Decision Rule Class: $\Phi=\{\Xi \rightarrow \mathcal{A}\}$
+\item Loss Function: $l:P \times \mathcal{A} \rightarrow \varmathbb{R} _{+}$
+\item Risk Functional: $R: \mathcal{L} \times \Phi \times P \rightarrow \varmathbb{R} _{+} $
+\end{enumerate}
+
+
+
+\section*{Example}
+
+\subsection{Sample Space}
+\[ \mathcal{G}_{n} = ( \mathcal{V}, \mathcal{E}, \mathcal{Y} ) \]
+\[ \mathcal{V} = \{ v_{1}, ... , v-{n} \} \]
+\[\mathcal{E} = \{ e_{11}, ..., e_{nn} \} \]
+\[\mathcal{Y} = \{0,1\}^{n} \]
+
+\subsection{Model}
+\[SBM^{K}_{n} (\vec{\rho}, \vec{\beta}), \ \vec{\rho} \in \Delta_{2}, \ \vec{\beta} \in (0,1)^{2\times2} \]
+
+\subsection{Action Space}
+\[\mathcal{A} = \{ y \in (0,1)^{n} \}\]
+
+\subsection{Loss Function}
+\[l: \mathcal{G}_{n} \times \mathcal{A} \rightarrow \varmathbb{R}_{+}\]
+\[l: \sum^{n}_{i=1} \mathbb{I} \{ \hat{y}_{i} = y_{i}\}\]
+
+\subsection{Risk Functional}
+\[R: P \ \times l \rightarrow \varmathbb{R}_{+}\]
+
+\end{document}  
